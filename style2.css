@@ -1,0 +1,232 @@
+.jumbotron
+{
+    background-color:rgb(173, 236, 217);
+}
+
+.container-fluid
+{
+    background-color:rgb(153, 110, 179);
+}
+
+.btn
+{
+    font-family:"Cooper Black";
+    background-color: rgb(230, 173, 52);
+    color: rgb(70, 4, 4);
+    padding: 5px 5px;
+    text-align: center;
+    border-radius:15px;
+    text-decoration: underline;
+    text-decoration-color:rgb(70, 4, 4);
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.btn1
+{
+    font-family:"Cooper Black";
+    background-color: rgb(26, 166, 190);
+    color: rgb(70, 4, 4);
+    padding: 5px 5px;
+    text-align: center;
+    border-radius:15px;
+    text-decoration: underline;
+    text-decoration-color:rgb(70, 4, 4);
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.btn2
+{
+    font-family:"Cooper Black";
+    background-color: rgb(35, 247, 7);
+    color: rgb(70, 4, 4);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:rgb(70, 4, 4);
+    display: inline-block;
+    font-size: 16px;
+    border-radius:15px;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.btn3
+{
+    font-family:"Cooper Black";
+    background-color: rgb(248, 33, 33);
+    color: rgb(70, 4, 4);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:rgb(70, 4, 4);
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    border-radius:15px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.btn4
+{
+    font-family:"Cooper Black";
+    background-color: rgb(224, 28, 87);
+    color: rgb(70, 4, 4);
+    padding: 5px 5px;
+    border-radius:15px;
+    border:2px solid rgb(1, 1, 59);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:rgb(70, 4, 4);
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+body
+{
+    background-color:rgb(153, 110, 179);
+}
+
+h1 
+{
+	font-family: "Cooper Black";
+    font-weight: bold;
+    font-stretch: expanded;
+    font-size: 100%;
+    color:rgb(6, 22, 77);
+    text-shadow: 3px 2px rgb(0, 255, 0);
+}
+
+h3 
+{
+	font-family: "Cooper Black";
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:rgb(3, 16, 59);
+    font-size: 200%;
+    color:rgb(3, 16, 59);
+    text-shadow: 3px 2px rgb(248, 232, 5);
+}
+
+th
+{
+    font-family: "Cooper Black";
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:rgb(59, 3, 3);
+    font-size: 16px;
+    font-weight:bolder;
+    color:rgb(59, 3, 3);
+    text-shadow: 2px 2px rgb(235, 202, 138)
+}
+label
+{
+	font-family:"Cooper Black";
+	font-weight: bold;
+    font-stretch: normal;
+    color:rgb(2, 36, 4);
+    text-decoration:underline;
+    text-decoration-color:rgb(2, 36, 4);
+}
+	
+input[type=button]
+{
+	font-family:"Cooper Black";
+	font-weight: normal;
+    font-stretch: expanded;
+    border:2px solid rgb(3, 3, 44);
+    text-align:center;
+    color:rgb(3, 3, 44);
+    font-weight:bold;
+}
+    
+#a
+{
+	font-family:"Cooper Black";
+	font-weight: normal;
+    font-stretch: expanded;
+    border:2px solid rgb(3, 3, 44);
+    text-align:center;
+    color:rgb(3, 3, 44);
+    font-weight:bold;
+}
+
+caption
+{
+    font-family: "Cooper Black";
+    font-weight: bold;
+    text-decoration: underline;
+    text-align:left;
+    text-decoration-color:rgb(7, 3, 59);
+    font-size: 150%;
+    font-size:20px;
+    letter-spacing:2px;
+    font-stretch: expanded;
+    text-shadow:rgb(0, 255, 0);
+    color:rgb(7, 3, 59);
+}
+table
+{
+	font-family:"Cooper Black";
+	font-weight: bold;
+    font-stretch: expanded;
+    color:rgb(44, 3, 42);
+}
+
+table:hover
+{
+    background-color:rgb(218, 200, 230);
+}
+.chk
+{
+    border:5px solid rgb(3, 3, 44);
+    display:block;
+    background:#04fc94;
+}
+
+.footer 
+{
+    background-image: linear-gradient(to right, rgba(238, 228, 240, 0) 0, rgb(153, 110, 179) 100%);
+    padding: 10px 0;
+	position:relative;
+    bottom:0;
+	margin-right:0;
+	margin-top:60px;
+	width:100%;	
+}
+.footer a 
+{
+    font-size: 20px;
+    padding: 5px;
+    border-right: 2px solid rgb(21, 51, 5);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.footer a:first-child 
+{
+    border-left: 2px solid rgb(21, 51, 5);
+}
+.footer a:hover 
+{
+    color: rgb(228, 238, 92);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.follow
+{
+    text-align:center;
+    font-weight:bold;
+	color:black;
+}

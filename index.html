@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            STUDENT DETAILS MANAGEMENT PORTAL
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="style2.css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+	    <script src="check2.js"> </script>    
+    </head>
+    <body>
+        <!-- header data here -->
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="myproject.html">Student Details Management Portal</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#"> HOME </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li> 
+                        <a class="navbar-brand"><i class="glyphicon glyphicon-log-in"> </i> SIGN IN</a>
+                    </li>    
+                    <li> 
+                        <a class="navbar-brand"><i class="glyphicon glyphicon-user"> </i> SIGN UP </a>
+                    </li>
+                </ul>  
+            </div>
+        </nav>
+        <!-- header ends here -->
+	    <div class="jumbotron text-center">
+		    <h1> <B> Student Details Management Portal </B> </h1>
+	    </div>
+	    <div class ="container-fluid">
+		    <form>
+		  	    <table align="center">
+                    <caption> <b> Enter Student Details Here: </b> </caption>
+				    <tr>
+					    <td>
+					        <label for="name"> FIRST NAME: </label>
+					        <input type="text" id="name" name="name" placeholder="NAME EX:ASHU" class="f1" size="20" required />&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;
+					    </td>
+					    <td> 
+					        <label for="tel"> ROLL NO: </label>  
+					        <input type="number" id="roll" name="tel" pattern="\d{10}" placeholder="ROLL NO. EX:12" class="f1"  size="20" required />&emsp;&emsp;&emsp;&emsp; &emsp;&emsp; 
+					    </td>
+					    <td>  
+					        <label for="stream"> STREAM: </label> 
+					        <input type="text" id="stream" name="stream" placeholder="STREAM EX:ME" size="20"class="f1"  required />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					    </td>
+					    <td>
+					        <label for="tel"> PASSOUT YEAR: </label> 
+					        <input type="number" id="pass" name="tel" pattern="\d{4}" placeholder="YEAR EX:2017" size="20" class="f1" required />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        </td>
+                        <td>
+                            &emsp;&emsp;&emsp;
+                        </td>
+                        <td>
+                           &emsp;&emsp;&emsp;
+                        </td>
+					    <td>
+					        <input type="button" class="btn" onclick="return insert();" value="INSERT STUDENT DETAILS IN THE DATABASE">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					    </td>
+				    </tr>
+			    </table>
+		    </form>
+	    </div>
+	    <div class="jumbotron text-center">
+            <h3> 
+                <b>
+                    STUDENT DETAIL DATABASE
+                </b>
+            </h3>
+            <br>
+            <br>
+			<table class="table table-hover" id="data_table">
+			    <tr>
+				    <th> <B> SELECT </B> </th>
+                    <th> <center> <B> ROLL NUMBER </B> </center> </th>
+                    <th> <center> <B> NAME </B> </center> </th>
+				    <th> <center> <B> STREAM </B> </center> </th>
+				    <th> <center> <B> PASSOUT YEAR </B> </center> </th>
+			    </tr>
+			   <tr id="row1">
+				    <td>
+                        <input type="checkbox" id="1" class="chk">
+                    </td>
+				    <td id="roll1">
+                        1
+                    </td>
+                    <td id="name1">
+                        AKANKSHA
+                    </td>
+				    <td id="str1">
+                        CSE
+                    </td>
+				    <td id="pass1">
+                        2019
+                    </td>
+				    <td>
+					    <input type="button" id="edt1" value="EDIT" class="btn1" onclick="edtrow('1')">
+                        <input type="button" id="save1" value="SAVE" class="btn2"  onclick="saverow('1')">
+                        <input type="button" id="del1" value="DELETE" class="btn3" onclick="delrow('1')">
+				    </td>
+			    </tr>
+			    <tr id="row2">
+				    <td>
+                        <input type="checkbox" id="2" class="chk">
+                    </td>
+				    <td id="roll2">
+                        2
+                    </td>
+                    <td id="name2">
+                        AKHIL
+                    </td>
+				    <td id="str2">
+                        CSE
+                    </td>
+				    <td id="pass2">
+                        2019
+                    </td>
+				    <td>
+				        <input type="button" id="edt2" value="EDIT" class="btn1" onclick="edtrow('2')">
+				        <input type="button" id="save2" value="SAVE" class="btn2" onclick="saverow('2')">
+                        <input type="button" id="del2" value="DELETE" class="btn3" onclick="delrow('2')">
+					</td>
+				</tr>
+			    <tr id="row3">
+				    <td>
+                        <input type="checkbox" id="3" class="chk">
+                    </td>
+				    <td id="roll3">
+                        3
+                    </td>
+				    <td id="name3">
+                        ANUREET
+                    </td>
+                    <td id="str3">
+                        CSE
+                    </td>
+				    <td id="pass3">
+                        2019
+                    </td>
+				    <td>
+                        <input type="button" id="edt3" value="EDIT" class="btn1" onclick="edtrow('3')">
+                        <input type="button" id="save3" value="SAVE" class="btn2" onclick="saverow('3')">
+                        <input type="button" id="del3" value="DELETE" class="btn3" onclick="delrow('3')">
+				    </td>
+                </tr>
+                <tr id="row4">
+                    <td>
+                        <input type="checkbox" id="4" class="chk">
+                    </td>
+                    <td id="roll4">
+                        4
+                    </td>
+                    <td id="name4">
+                        ASHIMA
+                    </td>
+                    <td id="str4">
+                        CSE
+                    </td>
+                    <td id="pass4">
+                        2019
+                    </td>
+                    <td>
+                        <input type="button" id="edt4" value="EDIT" class="btn1" onclick="edtrow('4')">
+                        <input type="button" id="save4" value="SAVE" class="btn2" onclick="saverow('4')">
+                        <input type="button" id="del4" value="DELETE" class="btn3" onclick="delrow('4')">
+                    </td>
+                </tr>
+            </table>
+			<input type="button" value="DELETE SELECTED ROWS" class="btn4" onclick="delall()" align="right">	
+        </div>
+        <!-- footer code here -->
+        <footer class="footer">
+            <div class="follow">
+                <h4><b>Follow us on:</b></h4>
+            </div> <br>
+            <div class="container text-center">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-square"style="font-size:24px;color:#3b5998" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/login"><i class="fa fa-twitter-square"style="font-size:24px;color: #0084b4"></i></a>
+                <a href="https://www.linkdin.com"><i class="fa fa-linkedin-square"style="font-size:24px;color: ##0077B5"></i></a>
+                <a href="https://plus.google.com/"><i class="fa fa-google-plus-square"style="font-size:24px;color: #db4a39"></i></a>
+            </div>	
+        </footer>
+        <!-- footer ends here -->
+    </body>
+</html>
